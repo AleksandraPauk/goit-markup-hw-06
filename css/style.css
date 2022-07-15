@@ -944,6 +944,13 @@ margin-top: 50px;
     background-size: contain;
 }
 
+.checkbox:focus +.checkbox-icon {
+    background-color: var(--link-color);
+    border-color: var(--link-color);
+    background-image: url(../images/icon\ check.svg);
+    background-size: contain;
+}
+
 .submit-button {
     margin: 0 124px 0px 124px;
 }
