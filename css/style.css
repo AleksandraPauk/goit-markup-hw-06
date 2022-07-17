@@ -602,6 +602,7 @@ margin-top: 50px;
 }
 
 .footer-input {
+display: block;
     width: 358px;
     height: 50px;
     margin-right: 12px;
@@ -612,6 +613,18 @@ margin-top: 50px;
     background-color: var(--main-title-color);
     padding: 15px 16px;
     position: relative; 
+}
+
+.footer-lable {
+    cursor: pointer;
+    display: block;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.footer-input-wrapper {
+    display: flex;
+    align-items: center;
 }
 
 .footer-button {
@@ -924,7 +937,9 @@ margin-top: 50px;
     border: 2px solid var(--title-text-color);
     border-radius: 4px;
     margin-right: 7px;
+    transition: border 250ms var(--timing-function);
 }
+
 
 .checkbox {
     position: absolute;
@@ -942,13 +957,17 @@ margin-top: 50px;
     border-color: var(--link-color);
     background-image: url(../images/icon\ check.svg);
     background-size: contain;
+    background-origin: border-box;
+    background-position: center;
 }
 
 .checkbox:focus +.checkbox-icon {
-    background-color: var(--link-color);
+    /* background-color: var(--link-color);
     border-color: var(--link-color);
     background-image: url(../images/icon\ check.svg);
-    background-size: contain;
+    background-size: contain; */
+
+    border: 2px solid var(--link-color);
 }
 
 .submit-button {
