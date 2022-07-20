@@ -624,7 +624,7 @@
             <div class="footer-input-wrapper">
               <input
                 class="footer-input"
-                type="text"
+                type="email"
                 id="client-email-footer"
                 placeholder="E-mail"
               />
@@ -642,6 +642,11 @@
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
+        <button class="modal-close-botton" type="button" data-modal-close>
+          <svg width="18px" height="18px" aria-hidden="true">
+            <use href="./images/sprite.svg#icon-close-button"></use>
+          </svg>
+        </button>
         <div class="modal-container">
           <h2 class="modal-name">Оставьте свои данные, мы вам перезвоним</h2>
           <form name="full-info" autocomplete="on">
@@ -709,12 +714,6 @@
               Отправить
             </button>
           </form>
-
-          <button class="modal-close-botton" type="button" data-modal-close>
-            <svg width="18px" height="18px" aria-hidden="true">
-              <use href="./images/sprite.svg#icon-close-button"></use>
-            </svg>
-          </button>
         </div>
       </div>
     </div>
